@@ -1,0 +1,120 @@
+body,html{
+   
+    margin: 0
+    
+}
+body{
+    background-color:#000;
+    overflow: hidden;
+}
+
+.content-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    max-width: 700px;
+    width:100%;
+    height: 50vh;
+    border: 10px solid grey;
+    border-radius: 15px;
+    overflow: scroll;
+}
+
+.h1{
+    text-align: center;   
+}
+
+.task{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #87CEEB;
+  z-index: 10;
+  width: 80;
+  height: 133px;
+  max-width: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+}
+
+.task.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.task-header {
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+
+  .task-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .task-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .task-body {
+    padding: 10px 15px;
+    font-size: 1.25rem;
+    width: 100%;
+    max-width: 50%;
+  }
+
+  .task-footer{
+    
+    position: absolute;
+    bottom: 1;
+    left: 1;
+  }
+
+
+  .display{
+    margin: 30px;
+  }
+
+  .display .ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+  }
+
+  
+  .list{
+    padding: 20px;
+    border-left: 5px solid #ddd;
+    margin: 20px 10px;
+    row-gap: 20px;
+    font-size: large;
+    color: black;
+  }
+
+  .list:hover{
+    border-color: #4169E1;
+}
+
+  .delete {
+    
+      float: right;
+      background:#4169E1;
+      padding: 6px;
+      border-radius: 4px;
+      cursor: pointer;
+      color: white;
+  }
+
