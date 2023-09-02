@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "firebase": "^10.3.1"
+  },
+  "name": "to-do-list",
+  "description": "This is a single page application which allows user to add to-do task to a list and also allows user to mark it complete or delete it from the list",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paudelpr1/TO-DO-List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paudelpr1/TO-DO-List/issues"
+  },
+  "homepage": "https://github.com/paudelpr1/TO-DO-List#readme",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}
